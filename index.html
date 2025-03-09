@@ -7,33 +7,34 @@
     <style>
         /* Reset and Global Styles */
         * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Arial', sans-serif; }
-        body { background: #0a192f; color: #ccd6f6; scroll-behavior: smooth; }
-        a { text-decoration: none; color: #64ffda; transition: 0.3s; }
+        body { background: #0a001f; color: #e0d8ff; scroll-behavior: smooth; }
+        a { text-decoration: none; color: #9d65ff; transition: 0.3s; }
         a:hover { color: #fff; }
 
         /* Navbar */
-        nav { position: fixed; width: 100%; padding: 15px 50px; background: rgba(10, 25, 47, 0.9); display: flex; justify-content: space-between; align-items: center; z-index: 1000; }
-        nav .logo { font-size: 1.8rem; font-weight: bold; color: #64ffda; }
+        nav { position: fixed; width: 100%; padding: 15px 50px; background: rgba(10, 0, 31, 0.9); display: flex; justify-content: space-between; align-items: center; z-index: 1000; }
+        nav .logo { font-size: 1.8rem; font-weight: bold; color: #9d65ff; }
         nav ul { list-style: none; display: flex; gap: 20px; }
         nav ul li { display: inline; font-size: 1.2rem; }
         
-        /* Landing Section */
-        .hero { display: flex; align-items: center; justify-content: center; height: 100vh; text-align: center; padding: 20px; }
-        .hero h1 { font-size: 3rem; }
-        .hero span { color: #64ffda; }
+        /* Hero Section */
+        .hero { display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100vh; text-align: center; padding: 20px; }
+        .hero img { width: 180px; height: 180px; border-radius: 50%; border: 4px solid #9d65ff; margin-bottom: 15px; }
+        .hero h1 { font-size: 2.8rem; color: #fff; }
+        .hero span { color: #9d65ff; }
         .hero p { font-size: 1.4rem; margin: 15px 0; }
-        .typing { font-size: 1.6rem; color: #64ffda; }
+        .typing { font-size: 1.6rem; color: #9d65ff; }
 
         /* Sections */
         section { padding: 80px 15%; }
-        h2 { font-size: 2.5rem; margin-bottom: 15px; color: #64ffda; }
+        h2 { font-size: 2.5rem; margin-bottom: 15px; color: #9d65ff; }
 
         /* Skills */
         .skills { display: flex; flex-wrap: wrap; gap: 20px; }
-        .skill-box { background: #112240; padding: 15px; border-radius: 8px; font-size: 1.2rem; }
+        .skill-box { background: #18002e; padding: 15px; border-radius: 8px; font-size: 1.2rem; border: 1px solid #9d65ff; }
 
         /* Footer */
-        footer { text-align: center; padding: 20px; background: #112240; margin-top: 30px; }
+        footer { text-align: center; padding: 20px; background: #18002e; margin-top: 30px; }
     </style>
 </head>
 <body>
@@ -48,12 +49,11 @@
         </ul>
     </nav>
 
-    <!-- Landing Section -->
+    <!-- Hero Section -->
     <div class="hero">
-        <div>
-            <h1>Hi, I'm <span>Rohit Dhanyaa Kannan</span></h1>
-            <p class="typing"></p>
-        </div>
+        <img src="profile.jpg" alt="Rohit Dhanyaa Kannan">
+        <h1>Hi, I'm <span>Rohit Dhanyaa Kannan</span></h1>
+        <p class="typing"></p>
     </div>
 
     <!-- About Section -->
